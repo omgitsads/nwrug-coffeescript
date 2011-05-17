@@ -1,0 +1,5 @@
+body { background: #fff; }
+#preso, .slide { 
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
