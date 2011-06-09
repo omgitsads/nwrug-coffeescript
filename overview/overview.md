@@ -12,11 +12,15 @@
 
 <!SLIDE>
 
-## Output passes through JSLint without warnings
+## Output passes JSLint, pretty printed and generally very readable
 
 <!SLIDE>
 
 ## "It's Just Javascript"
+
+<!SLIDE>
+
+## Used by 37Signals, Github and more!
 
 <!SLIDE bullets incremental>
 
@@ -29,10 +33,10 @@
 # Example Code #
 
     @@@ Ruby
-    create: (url, callback) ->
-        client.get "url:#{url}", (err, code) =>
-          if code?
-            callback code
-          else
-            @encode url, callback
-    
+    class Shortner
+      create: (url, callback) ->
+          client.get "url:#{url}", (err, code) =>
+            if code?
+              callback code
+            else
+              @encode url, callback

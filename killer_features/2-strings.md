@@ -96,14 +96,3 @@
       | \.{2,3}
     ) /// 
 
-<!SLIDE>
-
-# Comments
-
-<!SLIDE>
-
-    @@@ruby
-    ###
-    CoffeeScript Compiler v1.1.1
-    Released under the MIT License
-    ###
