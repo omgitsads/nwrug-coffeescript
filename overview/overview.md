@@ -25,8 +25,9 @@
 <!SLIDE bullets incremental>
 
 # Default in Rails 3.1
-* So you have to learn it!
+* So you have to write it!
 * (except not really.)
+* ![LolHH](lolhh.png)
 
 <!SLIDE>
 
