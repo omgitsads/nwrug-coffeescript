@@ -1,2 +1,12 @@
 hello = "World"
-one = 1
+one   = 1
+countries = ["UK", "Germany", "USA"]
+event = { name: "NWRUG", topic: "CoffeeScript"}
+
+kids =
+  brother:
+    name: "Max"
+    age: 11
+  sister:
+    name: "Ida"
+    age: 9
