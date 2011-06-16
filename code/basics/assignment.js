@@ -1,20 +1,27 @@
 (function() {
-  var countries, event, hello, kids, one;
+  var countries, event, hello, one;
   hello = "World";
   one = 1;
   countries = ["UK", "Germany", "USA"];
+  if (happy && knowsIt) {
+    clapsHands();
+    chaChaCha();
+  } else {
+    showIt();
+  }
+  if (friday) {
+    gottaGetDown();
+  }
   event = {
     name: "NWRUG",
-    topic: "CoffeeScript"
-  };
-  kids = {
-    brother: {
-      name: "Max",
-      age: 11
+    talk: {
+      title: "Introduction To CoffeeScript",
+      speaker: "Adam Holt"
     },
-    sister: {
-      name: "Ida",
-      age: 9
+    venue: {
+      name: "MadLab",
+      address: ["36-40 Edge Street", "Manchester"],
+      postcode: "M41HN"
     }
   };
 }).call(this);

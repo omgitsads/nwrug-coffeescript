@@ -4,74 +4,41 @@
 
 <!SLIDE>
 
-# Assignment
-
-<!SLIDE small>
-
     @@@ruby
-    # CoffeeScript
-
     hello = "World"
-    one   = 1
+    number = 1
     countries = ["UK", "Germany", "USA"]
-    event = {name: "NWRUG", topic: "CoffeeScript"}
 
-    kids =
-      brother:
-        name: "Max"
-        age: 11
-      sister:
-        name: "Ida"
-        age: 9
+    if happy and knowsIt
+      clapsHands()
+      chaChaCha()
+    else
+      showIt()
 
-<!SLIDE small>
-
-    @@@javascript
-    // Javascript
-
-    var hello, one, countries, event, kids;
-
-    hello = "World";
-    one   = 1;
-    countries = ["UK", "Germany", "USA"];
-    event = {
-      name: "NWRUG",
-      topic: "CoffeeScript"
-    };
-
-    kids = {
-      brother: {
-        name: "Max",
-        age:  11
-      },
-      sister: {
-        name: "Ida",
-        age: 9
-      }
-    };
-
-<!SLIDE>
-
-# Functions
-
-<!SLIDE>
-
-    @@@javascript
-    // Javascript
-
-    var cube, square;
-
-    square = function(x) {
-      return x * x;
-    };
-    cube = function(x) {
-      return square(x) * x;
-    };
+    gottaGetDown() if friday
 
 <!SLIDE>
 
     @@@ruby
-    # CoffeeScript
+    event =
+      name: "NWRUG"
+      talk:
+        title: "Introduction To CoffeeScript"
+        speaker: "Adam Holt"
+      venue:
+        name: "MadLab"
+        address: ["36-40 Edge Street", 
+          "Manchester"]
+        postcode: "M4 1HN"
 
+<!SLIDE>
+
+    @@@ruby
     square  = (x) -> x * x
     cube    = (x) -> square(x) * x
+
+    sayHello = (name) ->
+      alert("Hello, #{name}")
+
+    fill = (container, liquid = "coffee") ->
+      "Filling the #{container} with #{liquid}.."

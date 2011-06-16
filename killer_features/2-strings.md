@@ -4,17 +4,6 @@
 
 <!SLIDE>
 
-    @@@javascript
-    speed  = "Quick";
-    colour = "Brown";
-    animal = "Fox";
-
-    "The" + speed + colour + animal;
-
-    // "The Quick Brown Fox"
-
-<!SLIDE>
-
     @@@ruby
     speed  = "Quick"
     colour = "Brown"
@@ -37,16 +26,6 @@
 <!SLIDE>
 
 # HEREDOCs
-
-<!SLIDE>
-
-    @@@javascript
-    html  = "<html>";
-    html += "<head><title>Hello</title></head>";
-    html += "<body>";
-    html += "<h1>Hello, World</h1>";
-    html += "</body>";
-    html += "</html>";
 
 <!SLIDE>
 
@@ -86,13 +65,12 @@
 <!SLIDE>
 
     @@@ruby
-    pattern = /// ^ (
-      ?: [-=]>
-      | [-+*/%<>&|^!?=]=
-      | >>>=?
-      | ([-+:])\1
-      | ([&|<>])\2=?
-      | \?\.
-      | \.{2,3}
-    ) /// 
-
+    OPERATOR = /// ^ (
+      ?: [-=]>             # function
+       | [-+*/%<>&|^!?=]=  # compound assign / compare
+       | >>>=?             # zero-fill right shift
+       | ([-+:])\1         # doubles
+       | ([&|<>])\2=?      # logic / shift
+       | \?\.              # soak access
+       | \.{2,3}           # range or splat
+    ) ///

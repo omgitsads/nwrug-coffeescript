@@ -2,5 +2,9 @@
   {"section": "title"},
   {"section": "overview"},
   {"section": "killer_features"},
-  {"section": "basics"}
+  {"section": "basics"},
+  {"section": "array_comprehension"},
+  {"section": "splats"},
+  {"section": "dest_assign"},
+  {"section": "extras"}
 ]

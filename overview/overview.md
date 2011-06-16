@@ -31,13 +31,11 @@
 
 <!SLIDE>
 
-# Example Code #
-
     @@@ Ruby
     class Shortner
       create: (url, callback) ->
-          client.get "url:#{url}", (err, code) =>
-            if code?
-              callback code
-            else
-              @encode url, callback
+        client.get "url:#{url}", (err, code) =>
+          if code?
+            callback code
+          else
+            @encode url, callback
